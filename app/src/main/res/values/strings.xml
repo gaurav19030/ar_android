@@ -1,0 +1,49 @@
+<resources>
+    <string name="app_name">Ingenuity Tour</string>
+    <string name="home">Home</string>
+    <string name="openDrawer">Open Drawer</string>
+    <string name="closeDrawer">Close Drawer</string>
+    <string name="aboutmenu">About Ingenuity Tour</string>
+    <string name="routemenu">Ingenuity Tour Route</string>
+    <string name="gallerymenu">Gallery</string>
+    <string name="experiencemenu">Share Your Experience</string>
+    <string name="subscribemenu">Subscribe</string>
+    <string name="policymenu">Privacy Policy</string>
+    <string name="conditionmenu"><![CDATA[Terms & Condition]]></string>
+
+    <string name="aboutus">Pru is the debut studio album by American singer Pru, released in November
+        2000 through Capitol Records. The album was managed by Capitol Records executive Roy Lott, who
+        had signed Pru to Warner/Chappell Music Publishing after being impressed by her songwriting and
+        voice on a demo tape. Pru collaborated with Ben Garrison, the Characters, and Rick Williams on
+        the album. According to Lott, Pru was part of Capitol Records attempts to attract a wider audience
+        through her crossover appeal. Music critics have identified several genres on the album, with some
+        commentators noting influences from neo soul. Pru also used poetry as an inspiration for writing music.
+        Reviews of the album were generally positive, noting its composition and Prus voice, and comparing her
+        favorably to contemporary artists. The album peaked at number 176 on the Billboard 200 chart, an achievement
+        made possible in part by an intensive marketing strategy devised by Capitol Records executives. Two singles
+        – "Candles" and "Aaroma (of a Man)" – were released to positive reviews. "Candles" peaked at number 68 on
+        the Hot R And B/Hip-Hop Songs Billboard chart.Pru is the debut studio album by American singer Pru,
+        released in November 2000 through Capitol Records. The album was managed by Capitol Records executive Roy Lott,
+        who had signed Pru to Warner/Chappell Music Publishing after being impressed by her songwriting and voice on a demo tape.
+        Pru collaborated with Ben Garrison, the Characters, and Rick Williams on the album. According to Lott, Pru was part of Capitol
+        Records attempts to attract a wider audience through her crossover appeal. Music critics have identified several genres on the
+        album, with some commentators noting influences from neo soul. Pru also used poetry as an inspiration for writing music.
+        Reviews of the album were generally positive, noting its composition and Prus voice, and comparing her favorably to contemporary artists.
+        The album peaked at number 176 on the Billboard 200 chart, an achievement made possible in part by an intensive marketing strategy devised by
+        Capitol Records executives. Two singles – "Candles" and "Aaroma (of a Man)" – were released to positive reviews.
+        "Candles" peaked at number 68 on the Hot R And B/Hip-Hop Songs Billboard chart. </string>
+
+
+    <string name="dummy">When you use android:background, you are replacing much of the styling and
+        look and feel of a button with a blank color.Update: As of the version 23.0.0 release of AppCompat,
+        there is a new Widget.AppCompat.Button.A colored style which uses your theme's colorButtonNormal
+        for the disabled color and colorAccent for the enabled color.</string>
+    <string name="cotntact">Contact Us</string>
+    <string name="exit">Are you sure you want to exit ?</string>
+    <string name="Key">AIzaSyBFxtzRtz7R7VJZdzgA19h98dtQmJE_4dY</string>
+
+
+    <string name="procialize"><a href="https://www.procialize.net/home.php"><![CDATA[Designed & Developed by Procialize]]></a></string>
+    <string name="logout">Logout</string>
+    <string name="version">Version 1.0.4</string>
+</resources>

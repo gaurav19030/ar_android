@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/progres"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="10dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorwhite"
+            android:contentInsetEnd="0dp"
+            android:contentInsetLeft="0dp"
+            android:contentInsetRight="0dp"
+            android:contentInsetStart="0dp"
+            android:elevation="5dp"
+            android:minHeight="?attr/actionBarSize"
+            app:contentInsetStartWithNavigation="0dp">
+
+            <ImageView
+                android:id="@+id/logo"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:src="@drawable/logo" />
+
+        </android.support.v7.widget.Toolbar>
+        <View
+            android:layout_alignParentBottom="true"
+            android:background="@color/colortheme"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+    </android.support.design.widget.AppBarLayout>
+
+    <ProgressBar
+        android:indeterminate="true"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:indeterminateDrawable="@drawable/cusomdialouge"
+        />
+</RelativeLayout>

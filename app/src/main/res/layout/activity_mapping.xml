@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.MappingActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="10dp"
+        android:contentInsetLeft="0dp"
+        android:contentInsetStart="0dp"
+        app:contentInsetLeft="0dp"
+        app:contentInsetStart="0dp"
+        android:contentInsetRight="0dp"
+        android:contentInsetEnd="0dp"
+        app:contentInsetRight="0dp"
+        app:contentInsetEnd="0dp"
+        app:contentInsetStartWithNavigation="0dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorwhite"
+            android:elevation="5dp"
+            android:contentInsetLeft="0dp"
+            android:contentInsetStart="0dp"
+            app:contentInsetLeft="0dp"
+            app:contentInsetStart="0dp"
+            android:contentInsetRight="0dp"
+            android:contentInsetEnd="0dp"
+            app:contentInsetRight="0dp"
+            app:contentInsetEnd="0dp"
+            app:contentInsetStartWithNavigation="0dp"
+            android:minHeight="?attr/actionBarSize">
+            <ImageView
+                android:id="@+id/logo"
+                android:layout_centerInParent="true"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:src="@drawable/logo"/>
+
+            <ImageView
+                android:id="@+id/back"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:padding="5dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="left"
+                android:src="@drawable/ic_back"/>
+
+        </android.support.v7.widget.Toolbar>
+        <View
+            android:layout_alignParentBottom="true"
+            android:background="@color/colortheme"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+    </android.support.design.widget.AppBarLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <WebView
+        android:id="@+id/contactwebview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appBarLayout" />
+
+
+</LinearLayout>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.procialize.ingenratytour">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <permission
+        android:name="com.javapapers.android.maps.path.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.procialize.ingenratytour.permission.MAPS_RECEIVE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/appicon"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/appicon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Activity.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Activity.HomeActivity" />
+        <activity android:name=".Activity.AboutActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Activity.HomeActivity" />
+        </activity>
+        <activity android:name=".Activity.ContactUsActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Activity.HomeActivity" />
+        </activity>
+        <activity android:name=".Activity.PrivacyPolicyActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Activity.HomeActivity" />
+        </activity>
+        <activity android:name=".Activity.GalleryActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Activity.HomeActivity" />
+        </activity>
+        <activity android:name=".Activity.ShareExperienceActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Activity.HomeActivity" />
+        </activity>
+        <activity android:name=".Activity.SubscribeActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Activity.HomeActivity" />
+        </activity>
+        <activity android:name=".Activity.RouteActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Activity.HomeActivity" />
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="@string/Key" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity android:name=".Activity.LoginActivity" />
+        <activity android:name=".Activity.SignUpActivity" />
+        <activity android:name=".Activity.FullImageViewActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Activity.ProductImageActivity" />
+        </activity>
+        <activity android:name=".Activity.PdfViewActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Activity.ProductBroucherActivity" />
+        </activity>
+        <activity android:name=".Activity.ProductDetailsActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Activity.HomeActivity" />
+        </activity>
+        <activity android:name=".Activity.ProductImageActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Activity.ProductDetailsActivity" />
+        </activity>
+        <activity android:name=".Activity.ProductBroucherActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Activity.ProductDetailsActivity" />
+        </activity>
+        <activity android:name=".Activity.ProductVideoActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Activity.ProductDetailsActivity" />
+        </activity>
+        <activity android:name=".Activity.Condition">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Activity.HomeActivity" />
+        </activity>
+        <activity android:name=".Activity.MappingActivity"></activity>
+    </application>
+
+</manifest>

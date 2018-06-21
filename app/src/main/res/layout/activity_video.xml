@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context="com.procialize.ingenratytour.Activity.GalleryActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="10dp"
+        android:contentInsetLeft="0dp"
+        android:contentInsetStart="0dp"
+        app:contentInsetLeft="0dp"
+        app:contentInsetStart="0dp"
+        android:contentInsetRight="0dp"
+        android:contentInsetEnd="0dp"
+        app:contentInsetRight="0dp"
+        app:contentInsetEnd="0dp"
+        app:contentInsetStartWithNavigation="0dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorwhite"
+            android:elevation="5dp"
+            android:contentInsetLeft="0dp"
+            android:contentInsetStart="0dp"
+            app:contentInsetLeft="0dp"
+            app:contentInsetStart="0dp"
+            android:contentInsetRight="0dp"
+            android:contentInsetEnd="0dp"
+            app:contentInsetRight="0dp"
+            app:contentInsetEnd="0dp"
+            app:contentInsetStartWithNavigation="0dp"
+            android:minHeight="?attr/actionBarSize">
+            <ImageView
+                android:id="@+id/logo"
+                android:layout_centerInParent="true"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:src="@drawable/logo"/>
+
+        </android.support.v7.widget.Toolbar>
+        <View
+            android:layout_alignParentBottom="true"
+            android:background="@color/colortheme"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+    </android.support.design.widget.AppBarLayout>
+
+    <com.procialize.ingenratytour.CustomFonts.SiemensBoldTextview
+        android:layout_gravity="center"
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="Product Video"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="@dimen/textsizebigger"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/appBarLayout" />
+
+    <GridView
+        android:id="@+id/imagegrid"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+</LinearLayout>

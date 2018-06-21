@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group
+        android:id="@+id/grp1"
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/about"
+            android:checked="false"
+            android:icon="@drawable/ic_about"
+            android:title="@string/aboutmenu" />
+
+
+        <item
+            android:id="@+id/route"
+            android:checked="false"
+            android:icon="@drawable/ic_route"
+            android:title="@string/routemenu" />
+
+
+        <item
+            android:id="@+id/gallery"
+            android:checked="false"
+            android:icon="@drawable/ic_gallery"
+            android:title="@string/gallerymenu" />
+
+
+        <item
+            android:id="@+id/experience"
+            android:checked="false"
+            android:icon="@drawable/ic_share"
+            android:title="@string/experiencemenu" />
+
+
+        <item
+            android:id="@+id/subscribe"
+            android:checked="false"
+            android:icon="@drawable/ic_subscribe"
+            android:title="@string/subscribemenu" />
+
+
+        <item
+            android:id="@+id/policy"
+            android:checked="false"
+            android:icon="@drawable/ic_policy"
+            android:title="@string/policymenu" />
+
+        <item
+            android:id="@+id/condition"
+            android:checked="false"
+            android:icon="@drawable/ic_condition"
+            android:title="@string/conditionmenu" />
+
+        <item
+            android:id="@+id/contact"
+            android:checked="false"
+            android:icon="@drawable/ic_contactus"
+            android:title="@string/cotntact" />
+
+        <item
+            android:id="@+id/logout"
+            android:checked="false"
+            android:icon="@drawable/ic_logout"
+            android:title="@string/logout" />
+
+        <item
+            android:id="@+id/version"
+            android:checked="false"
+            android:title="@string/version" />
+
+    </group>
+</menu>

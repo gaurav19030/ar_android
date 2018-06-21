@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="design_navigation_separator_vertical_padding">3dp</dimen>
+
+    <dimen name="textsizesmall">6sp</dimen>
+    <dimen name="textsizenormal">12sp</dimen>
+    <dimen name="textsizebigger">18sp</dimen>
+
+</resources>

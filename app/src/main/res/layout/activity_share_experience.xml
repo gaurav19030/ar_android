@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context="com.procialize.ingenratytour.Activity.ShareExperienceActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="10dp"
+        android:contentInsetLeft="0dp"
+        android:contentInsetStart="0dp"
+        app:contentInsetLeft="0dp"
+        app:contentInsetStart="0dp"
+        android:contentInsetRight="0dp"
+        android:contentInsetEnd="0dp"
+        app:contentInsetRight="0dp"
+        app:contentInsetEnd="0dp"
+        app:contentInsetStartWithNavigation="0dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorwhite"
+            android:elevation="5dp"
+            android:contentInsetLeft="0dp"
+            android:contentInsetStart="0dp"
+            app:contentInsetLeft="0dp"
+            app:contentInsetStart="0dp"
+            android:contentInsetRight="0dp"
+            android:contentInsetEnd="0dp"
+            app:contentInsetRight="0dp"
+            app:contentInsetEnd="0dp"
+            app:contentInsetStartWithNavigation="0dp"
+            android:minHeight="?attr/actionBarSize">
+            <ImageView
+                android:id="@+id/logo"
+                android:layout_centerInParent="true"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:src="@drawable/logo"/>
+
+        </android.support.v7.widget.Toolbar>
+        <View
+            android:layout_alignParentBottom="true"
+            android:background="@color/colortheme"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+    </android.support.design.widget.AppBarLayout>
+
+    <com.procialize.ingenratytour.CustomFonts.SiemensBoldTextview
+        android:id="@+id/textView2"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Share Your Experience"
+        android:layout_gravity="center"
+        android:textSize="@dimen/textsizebigger"
+        android:textColor="@color/colorPrimaryDark" />
+
+
+   <android.support.v4.widget.NestedScrollView
+       android:fillViewport="true"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+       <LinearLayout
+           android:orientation="vertical"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent">
+
+
+           <com.procialize.ingenratytour.CustomFonts.SiemensRegularTextview
+               android:layout_marginTop="20dp"
+               android:layout_marginRight="10dp"
+               android:layout_marginLeft="10dp"
+               android:text="Q1. How was the Event?"
+               android:textSize="@dimen/textsizenormal"
+               android:textColor="@color/colorPrimaryDark"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content" />
+
+           <com.procialize.ingenratytour.CustomFonts.SiemensRegularEditext
+               android:background="@drawable/hometext"
+               android:layout_margin="10dp"
+               android:id="@+id/eventEt"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:textSize="@dimen/textsizenormal"
+               android:padding="10dp"
+               android:lines="10"
+               android:minLines="5"
+               android:gravity="top|left"
+               android:maxLines="15" />
+
+           <com.procialize.ingenratytour.CustomFonts.SiemensRegularTextview
+               android:layout_marginTop="20dp"
+               android:layout_marginRight="10dp"
+               android:layout_marginLeft="10dp"
+               android:textSize="@dimen/textsizenormal"
+               android:text="Q2. How would you rate the app"
+               android:textColor="@color/colorPrimaryDark"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content" />
+
+
+           <com.procialize.ingenratytour.CustomFonts.RegularCheckBox
+               android:layout_margin="10dp"
+               android:id="@+id/outstandcheck"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:textSize="@dimen/textsizenormal"
+               android:buttonTint="@color/colortheme"
+               android:layout_below="@+id/checkBox1"
+               android:layout_centerHorizontal="true"
+               android:text="Outstanding" />
+
+           <com.procialize.ingenratytour.CustomFonts.RegularCheckBox
+               android:layout_margin="10dp"
+               android:id="@+id/excelentcheck"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:textSize="@dimen/textsizenormal"
+               android:buttonTint="@color/colortheme"
+               android:layout_alignLeft="@+id/checkBox2"
+               android:layout_below="@+id/checkBox2"
+               android:text="Excelent" />
+
+           <com.procialize.ingenratytour.CustomFonts.RegularCheckBox
+               android:layout_margin="10dp"
+               android:id="@+id/verygocheck"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:textSize="@dimen/textsizenormal"
+               android:buttonTint="@color/colortheme"
+               android:layout_alignLeft="@+id/checkBox2"
+               android:layout_alignParentTop="true"
+               android:text="Very Good" />
+
+
+           <com.procialize.ingenratytour.CustomFonts.RegularCheckBox
+               android:layout_margin="10dp"
+               android:id="@+id/goocheck"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:textSize="@dimen/textsizenormal"
+               android:buttonTint="@color/colortheme"
+               android:layout_alignLeft="@+id/checkBox2"
+               android:layout_alignParentTop="true"
+               android:text="Good" />
+
+           <com.procialize.ingenratytour.CustomFonts.RegularCheckBox
+               android:layout_margin="10dp"
+               android:id="@+id/satisfyheck"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:textSize="@dimen/textsizenormal"
+               android:buttonTint="@color/colortheme"
+               android:layout_alignLeft="@+id/checkBox2"
+               android:layout_alignParentTop="true"
+               android:text="Satisfactory" />
+
+           <com.procialize.ingenratytour.CustomFonts.SiemensRegularTextview
+               android:layout_marginTop="20dp"
+               android:layout_marginRight="10dp"
+               android:layout_marginLeft="10dp"
+               android:text="Q2. Feeedback for Improvement"
+               android:textSize="@dimen/textsizenormal"
+               android:textColor="@color/colorPrimaryDark"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content" />
+
+           <com.procialize.ingenratytour.CustomFonts.SiemensRegularEditext
+               android:background="@drawable/hometext"
+               android:layout_margin="10dp"
+               android:padding="10dp"
+               android:id="@+id/feedEt"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:lines="10"
+               android:textSize="@dimen/textsizenormal"
+               android:minLines="5"
+               android:gravity="top|left"
+               android:maxLines="15" />
+
+
+           <com.procialize.ingenratytour.CustomFonts.SiemensBoldButton
+               android:id="@+id/submitbtn"
+               android:text="Submit"
+               android:layout_marginBottom="10dp"
+               android:textSize="@dimen/textsizenormal"
+               android:layout_marginTop="25dp"
+               android:layout_gravity="center"
+               android:textColor="@color/colorwhite"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:background="@drawable/buttonclick"
+               android:elevation="8dp" />
+
+
+       </LinearLayout>
+   </android.support.v4.widget.NestedScrollView>
+</LinearLayout>
